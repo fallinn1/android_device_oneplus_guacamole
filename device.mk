@@ -18,6 +18,11 @@ PRODUCT_COPY_FILES += \
 PERF_GOV_SUPPORTED := true
 PERF_DEFAULT_GOV := schedutil
 
+# Axion Kernel Manager
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/kernel/ax_kernel_manager_sun.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ax_kernel_manager.xml \
+    $(LOCAL_PATH)/rootdir/etc/ax_init_sun.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ax_init_sun.rc
+
 # High Brightness Mode (HBM)
 HBM_SUPPORTED := false
 HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
