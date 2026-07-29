@@ -23,7 +23,7 @@ AXION_PROCESSOR := Snapdragon_855
 TARGET_ENABLE_BLUR := true
 TARGET_INCLUDE_AXFX := false
 TARGET_INCLUDES_LOS_PREBUILTS := true
-BYPASS_CHARGE_SUPPORTED := true
+TARGET_NEEDS_VULKAN_MEDIA_FIX := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_guacamole
